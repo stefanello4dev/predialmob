@@ -1,0 +1,23 @@
+{% load static %}
+
+<!-- SIDEBAR -->
+<div class="sidebar">
+  <div class="sidebar-logo">
+    <a href="index.html">
+      <img src="{% static 'protend/images/logo.png' %}" alt="Protend logo">
+    </a>
+    <div class="sidebar-close" id="sidebar-close">
+      <i class='bx bx-left-arrow-alt'></i>
+    </div>
+  </div>
+  <!-- SIDEBAR MENU -->
+  <div class="simlebar-sc" data-simplebar>
+    <ul class="sidebar-menu tf">
+      {% for item in menu %}
+        {% include 'core/sidebar_item.html'  %}
+      {% endfor %}
+    </ul>
+  </div>
+  <!-- END SIDEBAR MENU -->
+</div>
+<!-- END SIDEBAR -->

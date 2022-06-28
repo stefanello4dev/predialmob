@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+{% load static %}
+{% load i18n %}
+
+<head>
+  {% block head %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{% translate 'base.html title' %}</title>
+
+    <link rel="shortcut icon" href="{% static 'protend/images/favicon.png' %}" type="image/png">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    {% block head_extra %}
+    {% endblock %}
+
+    <link rel="stylesheet" href="{% static 'protend/css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/grid.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'protend/css/responsive.css' %}">
+  {% endblock %}
+</head>
+<body class="sidebar-expand">
+  {% include 'core/sidebar.html' %}
+  {% include 'core/header.html' %}
+
+  {% block body %}
+  {% endblock %}
+
+  {% block body_scripts %}
+    <script src="{% static 'protend/libs/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'protend/libs/moment/min/moment.min.js' %}"></script>
+    <script src="{% static 'protend/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'protend/libs/peity/jquery.peity.min.js' %}"></script>
+    <script src="{% static 'protend/libs/chart.js/Chart.bundle.min.js' %}"></script>
+    <script src="{% static 'protend/libs/owl.carousel/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'protend/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'protend/libs/apexcharts/apexcharts.js' %}"></script>
+    <script src="{% static 'protend/libs/simplebar/simplebar.min.js' %}"></script>
+
+    <script src="{% static 'protend/js/main.js' %}"></script>
+    <script src="{% static 'protend/js/shortcode.js' %}"></script>
+    <script src="{% static 'protend/js/main.js' %}"></script>
+    <script src="{% static 'protend/js/dashboard.js' %}"></script>
+    <script src="{% static 'protend/js/shortcode.js' %}"></script>
+    <script src="{% static 'protend/js/pages/dashboard.js' %}"></script>
+  {% endblock %}
+</body>
+</html>

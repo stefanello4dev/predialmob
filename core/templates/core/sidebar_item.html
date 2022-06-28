@@ -1,0 +1,27 @@
+{% if item.subitens %}
+  <li class="sidebar-submenu">
+    <a href class="sidebar-menu-dropdown">
+      <i class='{{ item.icone }}'></i>
+      <span>{{ item.nome }}</span>
+      <div class="dropdown-icon">
+        <i class='bx bx-chevron-down'></i>
+      </div>
+    </a>
+    <ul class="sidebar-menu sidebar-menu-dropdown-content">
+      {% for subitem in item.subitens %}
+        <li>
+          <a href="{{ subitem.1 }}">
+            {{ subitem.0 }}
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </li>
+{% else %}
+  <li>
+    <a href="{{ item.href }}">
+      <i class='{{ item.icone }}'></i>
+      <span>{{ item.nome }}</span>
+    </a>
+  </li>
+{% endif %}
