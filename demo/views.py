@@ -18,7 +18,8 @@ def view_calendar(request):
 
 
 def view_manutencao(request):
-    return render(request, 'demo/calendario.html', {
-        'main_title': 'Manutenção',
-        'menu': MenuItem.get_menu(request)
-    })
+    return render(request, 'demo/atividade.html', {})
+
+
+def view_helpdesk(request):
+    return render(request, 'demo/helpdesk.html', {})
