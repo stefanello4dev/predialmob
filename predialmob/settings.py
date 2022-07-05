@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-ue_7l$u-&p$=last_mfpxe4pp63u=40d3g6x4d0ei5qfrym3@k
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     'core',
+    'demo',
     'protend',
 ]
 

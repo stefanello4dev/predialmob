@@ -1,0 +1,147 @@
+{% extends 'core/base.html' %}
+
+{% load static %}
+
+{% block head_extra %}
+  <link rel="stylesheet" href="{% static 'protend/libs/owl.carousel/assets/owl.carousel.min.css' %}">
+  <link rel="stylesheet" href="{% static 'protend/libs/pg-calendar-master/pignose.calendar.css' %}">
+{% endblock %}
+
+{% block body %}
+  <div class="main">
+    <div class="main-content dashboard">
+      <div class="row">
+        <div class="col-4 col-md-12">
+          <div class="box">
+            <div class="box-header  pt-0">
+              <div class="me-auto">
+                <h4 class="card-title mb-0 fs-22">Calendário</h4>
+              </div>
+            </div>
+            <div class="box-body pb-0">
+              <div class="custom-calendar"></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-8 col-md-12">
+          <div class="box ">
+            <div class="box-header  pt-0">
+              <div class="me-auto">
+                <h4 class="card-title mb-0 fs-22">Sistemas agendados</h4>
+              </div>
+            </div>
+            <div class="box-body pb-0 table-responsive activity mt-18">
+              <table class="table table-vcenter text-nowrap table-bordered dataTable no-footer mw-100" id="task-profile"
+                     role="grid">
+                <thead>
+                <tr class="top">
+                  <th class="border-bottom-0 sorting fs-14 font-w500" tabindex="0" aria-controls="task-profile"
+                      rowspan="1"
+                      colspan="1" style="width: 222.312px;">Sistema
+                  </th>
+                  <th class="border-bottom-0 sorting fs-14 font-w500" tabindex="0" aria-controls="task-profile"
+                      rowspan="1"
+                      colspan="1" style="width: 87.9844px;">Data
+                  </th>
+                  <th class="border-bottom-0 sorting fs-14 font-w500" tabindex="0" aria-controls="task-profile"
+                      rowspan="1"
+                      colspan="1" style="width: 110.719px;">Situação
+                  </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr class="odd">
+                  <td>
+                    <a href="#" class="d-flex "> <span>Instalações hidráulicas</span> </a>
+                  </td>
+                  <td>16-06-2021</td>
+                  <td><span class="badge badge-warning">Agendado</span></td>
+                </tr>
+                <tr class="even">
+                  <td>
+                    <a href="#" class="d-flex "> <span>Website Develop</span> </a>
+                  </td>
+                  <td>22-04-2021</td>
+                  <td>
+                    <div class="d-flex"><span class="badge badge-danger">Cancelado</span>
+                      <div class="mt-1 ms-1"><span class="feather feather-info text-danger" data-bs-toggle="tooltip"
+                                                   data-bs-placement="top" title=""
+                                                   data-bs-original-title="Dealy by 99 days"></span></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>
+                    <a href="#" class="d-flex"><span>Digital Marketing</span> </a>
+                  </td>
+                  <td>16-06-2021</td>
+                  <td><span class="badge badge-primary-light">Pendente</span></td>
+                </tr>
+                <tr class="even">
+                  <td>
+                    <a href="#" class="d-flex "><span>Ad Analysis</span> </a>
+                  </td>
+                  <td>19-05-2021</td>
+                  <td><span class="badge badge-success">Concluído</span></td>
+                </tr>
+                <tr class="odd">
+                  <td>
+                    <a href="#" class="d-flex "><span>Design update</span> </a>
+                  </td>
+                  <td>21-04-2021</td>
+                  <td><span class="badge badge-success">Concluído</span></td>
+                </tr>
+                <tr class="even">
+                  <td>
+                    <a href="#" class="d-flex "><span>Design update</span> </a>
+                  </td>
+                  <td>21-01-2021</td>
+                  <td>
+                    <div class="d-flex"><span class="badge badge-success">Concluído</span>
+                      <div class="mt-1 ms-1"><span class="feather feather-info text-danger" data-bs-toggle="tooltip"
+                                                   data-bs-placement="top" title=""
+                                                   data-bs-original-title="Dealy by 30 days"></span></div>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="odd">
+                  <td>
+                    <a href="#" class="d-flex "><span>Design update</span> </a>
+                  </td>
+                  <td>23-01-2021</td>
+                  <td><span class="badge badge-success">Concluído</span></td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{% endblock %}
+
+{% block body_scripts %}
+  <script src="{% static 'protend/libs/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'protend/libs/jquery/jquery-ui.min.js' %}"></script>
+  <script src="{% static 'protend/libs/moment/min/moment.min.js' %}"></script>
+  <script src="{% static 'protend/libs/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'protend/libs/peity/jquery.peity.min.js' %}"></script>
+  <script src="{% static 'protend/libs/chart.js/Chart.bundle.min.js' %}"></script>
+  <script src="{% static 'protend/libs/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'protend/libs/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'protend/js/countto.js' %}"></script>
+  <script src="{% static 'protend/libs/circle-progress/circle-progress.min.js' %}"></script>
+  <script src="{% static 'protend/libs/pg-calendar-master/pignose.calendar.full.min.js' %}"></script>
+  <script src="{% static 'protend/libs/apexcharts/apexcharts.js' %}"></script>
+  <script src="{% static 'protend/libs/simplebar/simplebar.min.js' %}"></script>
+
+  <!-- APP JS -->
+  <script src="{% static 'protend/js/pages/chart-circle.js' %}"></script>
+  <script src="{% static 'protend/js/main.js' %}"></script>
+  <script src="{% static 'protend/js/pages/project.js' %}"></script>
+  <script src="{% static 'protend/js/shortcode.js' %}"></script>
+  <script src="{% static 'protend/js/script.js' %}"></script>
+  <script src="{% static 'protend/js/pages/dashboard.js' %}"></script>
+{% endblock %}
+
