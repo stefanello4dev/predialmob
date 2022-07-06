@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: 0.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-06-27 22:49-0300\n"
+"POT-Creation-Date: 2022-07-05 21:03-0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Eduardo Stefanello eduardo@stefanello.cc\n"
 "MIME-Version: 1.0\n"
@@ -51,3 +51,51 @@ msgstr "Sair"
 #: .\core\templates\core\header_search.html:19
 msgid "header buscar"
 msgstr "Buscar"
+
+#: .\manutencao\apps.py:9
+msgid "manutencao"
+msgstr ""
+
+#: .\manutencao\models.py:8 .\manutencao\models.py:21
+msgid "descricao"
+msgstr "descrição"
+
+#: .\manutencao\models.py:14 .\manutencao\models.py:19
+msgid "sistema"
+msgstr "sistema"
+
+#: .\manutencao\models.py:15
+msgid "sistemas"
+msgstr "sistemas"
+
+#: .\manutencao\models.py:20
+msgid "subsistema"
+msgstr "subsistema"
+
+#: .\manutencao\models.py:22
+msgid "detalhes"
+msgstr "detalhes"
+
+#: .\manutencao\models.py:24 .\manutencao\models.py:41
+msgid "responsavel"
+msgstr "responsável"
+
+#: .\manutencao\models.py:26
+msgid "periodicidade"
+msgstr "periodicidade"
+
+#: .\manutencao\models.py:28
+msgid "tipo de periodo"
+msgstr "tipo de período"
+
+#: .\manutencao\models.py:33
+msgid "procedimento"
+msgstr "procedimento"
+
+#: .\manutencao\models.py:34
+msgid "procedimentos"
+msgstr "procedimentos"
+
+#: .\manutencao\models.py:42
+msgid "responsaveis"
+msgstr "responsáveis"
